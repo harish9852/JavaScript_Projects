@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Bill Calculator</title>
+     
+</head>
+<body>
+    <div class="container">
+        <h2>Flight Bill Calculator</h2>
+        <label for="flightType">Select Flight Class:</label>
+        <select id="flightType">
+            <option value="300">Economy - R3000</option>
+            <option value="600">Business - R6000</option>
+            <option value="1200">First Class - R1200</option>
+        </select>
+
+        <label for="passengers">Number of Passengers:</label>
+        <input type="number" id="passengers" min="1" value="1">
+
+        <label>Extra Services:</label>
+        <input type="checkbox" id="luggage" value="50"> Extra Luggage - R5000 <br>
+        <input type="checkbox" id="meals" value="30"> Meals - R3000 <br>
+        <input type="checkbox" id="wifi" value="20"> In-flight WiFi - R2000 <br>
+
+        <button onclick="calculateBill()">Calculate Bill</button>
+        <div id="result"></div>
+    </div>
+
+     
+</body>
+</html>

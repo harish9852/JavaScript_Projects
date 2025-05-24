@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border Styles Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        .border-box {
+            width: 200px;
+            height: 100px;
+            margin: 20px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+        .solid { border: 5px solid black; }
+        .dashed { border: 5px dashed red; }
+        .dotted { border: 5px dotted blue; }
+        .double { border: 5px double green; }
+        .groove { border: 5px groove purple; }
+        .ridge { border: 5px ridge orange; }
+        .inset { border: 5px inset brown; }
+        .outset { border: 5px outset pink; }
+    </style>
+</head>
+<body>
+    <h2>Different Border Styles</h2>
+    <div class="border-box solid">Solid</div>
+    <div class="border-box dashed">Dashed</div>
+    <div class="border-box dotted">Dotted</div>
+    <div class="border-box double">Double</div>
+    <div class="border-box groove">Groove</div>
+    <div class="border-box ridge">Ridge</div>
+    <div class="border-box inset">Inset</div>
+    <div class="border-box outset">Outset</div>
+</body>
+</html>

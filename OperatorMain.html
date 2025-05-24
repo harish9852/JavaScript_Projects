@@ -1,0 +1,51 @@
+<!-- example on JS  -->
+<h3>demo on JS operators</h3>
+<script>
+  let x=17, y=9;
+  //let x=10, y="ram", z=true;
+  
+  //arithmatic ope	+, -, *, /, %, **
+  document.write(x+y, '<br>');
+  document.write(y*3, '<br>');
+  document.write(y**3, '<br>');
+  //relational ope	>, <, >=, <=, ==, !=, ===, !==
+  document.write(x>=0, '<br>');
+  let z="9";
+   document.write(y==z, '<br>');	//"9"=="9"
+  document.write(y===z, '<br>'); //9==="9"
+  document.write(y!=z, '<br>');	//"9"!="9"  
+  document.write(y!==z, '<br>'); //9!=="9"
+  
+  //logical ope	 &&  ||	   !
+  document.write(y>=0 && y<=10, '<br>');
+  document.write(!(x<0), '<br>');
+  
+  /* assignment ope		=
+	shorthand ope	+=,  -=,  /=,  %=,  *=,  **=
+	*/
+	x+=10;	//x=x+10;
+	y*=20;	//y=y*20;
+	document.write(x,'<bR>',y,'<br>');
+	
+	//concat ope	+
+  document.write("rama"+"rao"+"<bR>");
+  document.write(100+"mangos<br>");
+  document.write(20+true+"<bR>");
+  
+  /* increment 	++	currval+1	   ++var	var++	
+	decrement	--	currval-1	   --var	var--
+									(pre)	(post) */
+  x++;	//post
+  document.write(x,'<br>');
+  ++x;	//pre
+  document.write(x,'<br>');  
+  let res=10*x++;	//30	290
+  //let res=10*++x;	//30	300
+  document.write(x,'<br>', res,'<bR>');
+  
+   //conditional ope   ?:
+  document.write( y%2===0?"Even number" : "Odd number");
+  
+   
+ 
+  </script>

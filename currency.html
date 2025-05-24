@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Conversion Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 500px;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px gray;
+        }
+        label, input, button {
+            display: block;
+            margin: 10px auto;
+            width: 80%;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+        button {
+            padding: 10px;
+            background-color: blue;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Currency Conversion Table</h2>
+        
+        <label for="amount">Enter Amount in INR:</label>
+        <input type="number" id="amount" placeholder="Enter amount in INR" min="1" value="1">
+        
+        <button onclick="convertCurrency()">Convert</button>
+        
+        <table>
+            <tr>
+                <th>Currency</th>
+                <th>Converted Amount</th>
+            </tr>
+            <tr>
+                <td>INR(R)</td>
+                <td id="usd">-</td>
+            </tr>
+            <tr>
+                <td>DOLLAR($)</td>
+                <td id="eur">-</td>
+            </tr>
+            <tr>
+                <td>URO(U)</td>
+                <td id="gbp">-</td>
+            </tr>
+            
+                <td>JPY (¥)</td>
+                <td id="jpy">-</td>
+            </tr>
+        </table>
+    </div>
+
+    
+    </script>
+</body>
+</html>

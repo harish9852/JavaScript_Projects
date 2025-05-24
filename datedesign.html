@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Element Using For Loop</title>
+</head>
+<body>
+    <h3>Date Element Designing Using ForLoop</h3>
+    <label>Date of Birth:</label><br>
+
+    <script>
+        // Date element
+        document.write("<select id='Day'>");
+        for (let D = 1; D <= 31; ++D) {
+            document.write("<option>" + D + "</option>");
+        }
+        document.write("</select>");
+
+        // Month element
+        let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+        document.write("<select id='Months'>");
+        for (let M = 0; M < 12; M++) { // Fix: Loop should go up to 11 (0-indexed)
+            document.write("<option>" + months[M] + "</option>"); // Fix: Corrected variable name
+        }
+        document.write("</select>");
+
+        // Year element
+        document.write("<select id='Year'>");
+        for (let Y = 2025; Y >= 1905; Y--) {
+            document.write("<option>" + Y + "</option>");
+        }
+        document.write("</select>");
+    </script>
+</body>
+</html>

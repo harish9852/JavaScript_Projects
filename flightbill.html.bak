@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Bill Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        .container {
+            max-width: 400px;
+            margin: auto;
+            padding: 20px;
+            border: 2px solid black;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px gray;
+        }
+        label, select, input {
+            display: block;
+            margin: 10px auto;
+            width: 80%;
+        }
+        button {
+            padding: 10px;
+            background-color: blue;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        #result {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Flight Bill Calculator</h2>
+        <label for="flightType">Select Flight Class:</label>
+        <select id="flightType">
+            <option value="300">Economy - $300</option>
+            <option value="600">Business - $600</option>
+            <option value="1200">First Class - $1200</option>
+        </select>
+
+        <label for="passengers">Number of Passengers:</label>
+        <input type="number" id="passengers" min="1" value="1">
+
+        <label>Extra Services:</label>
+        <input type="checkbox" id="luggage" value="50"> Extra Luggage - $50 <br>
+        <input type="checkbox" id="meals" value="30"> Meals - $30 <br>
+        <input type="checkbox" id="wifi" value="20"> In-flight WiFi - $20 <br>
+
+        <button onclick="calculateBill()">Calculate Bill</button>
+        <div id="result"></div>
+    </div>
+
+     
+</body>
+</html>

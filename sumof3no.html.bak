@@ -1,0 +1,18 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+     <title>finding sum of 3 numbers</title>
+    <style>
+        input { text-align: center; }
+        h1 { display: inline; }
+    </style>
+</head>
+<body align="centre">
+<form oninput ="res.value = +fn.values">
+<h2>finding sum of 3 numbers</h2>
+<input type="numbers" id="fn" value = "0"><h3>+</h3>
+<input type="numbers" id="sn" value = "0"><h3>=</h3>
+ <input type="numbers" id="tn" value = "0"><h3></h3>
+</body>
+</html>

@@ -1,0 +1,23 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example on JS</title>
+</head>
+<body>
+    <h3>Demo on Parsing</h3>
+    <script>
+        let x = "15", y = "9";
+        // Auto parse
+        document.write(x - y, '<br>'); // Auto conversion to number
+        document.write(y * 3, '<br>');
+        document.write(x / 10, '<br>');
+        document.write(++x, '<br>'); // x becomes number and increments
+        document.write(--y, '<br>'); // y becomes number and decrements
+
+         
+    </script>
+</body>
+</html>
+  
